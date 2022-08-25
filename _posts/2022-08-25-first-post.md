@@ -1,5 +1,6 @@
 ---
 title: "github.io 블로그 첫 포스팅"
+layout: single
 excerpt: "Github Blog 서비스의 github.io 블로그의 첫 시작"
 
 categories:
