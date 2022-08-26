@@ -7,6 +7,7 @@ categories:
   - Blog
 tags:
   - Blog
+  - 넋두리
 last_modified_at: 2022-08-25
 ---
 

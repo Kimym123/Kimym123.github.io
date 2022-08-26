@@ -21,10 +21,10 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "큰 공간으로"
 description              : "나를 드러내는 공간."
-url                      : "https://kimym123.github.io/"
+url                      : "https://kimym123.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/myPicture.jpg"
+teaser                   : "/assets/images/myPicture.png"
 logo                     : "/assets/images/myLogo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -96,9 +96,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"
   google:
-    tracking_id          :
+    tracking_id          : G-V84CBW215F
     anonymize_ip         : # true, false (default)
 
 
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "큰 공간으로"
   avatar           : "/assets/images/myPicture.png"
-  bio              : "차근차근 한 걸음 충실하게."
+  bio              : "차근차근 한 걸음씩 충실하게."
   location         : "South Korea"
   email            :
   links:
@@ -286,10 +286,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true
+      show_date: true
 
   # _pages
   - scope:
