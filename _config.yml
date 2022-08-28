@@ -24,7 +24,7 @@ description              : "나를 드러내는 공간."
 url                      : "https://kimym123.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/myPicture.png"
+teaser                   : "/assets/images/myLogo.png"
 logo                     : "/assets/images/myLogo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
