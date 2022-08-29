@@ -13,6 +13,9 @@ tags:
   - 코딩
 last_modified_at: 2022-08-26
 ---
+
+![react](/assets/images/posts/22.08.26/react.jpg)
+
 **많은 기업에서 요구하는 스펙이기 때문입니다.**
 
 > 솔직하고 수동적인 답변은 영양가가 없으니, why를 붙여보자.
