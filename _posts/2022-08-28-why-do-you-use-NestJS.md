@@ -14,7 +14,7 @@ tags:
 last_modified_at: 2022-08-28
 ---
 
-![NestJS](/assets/images/posts/22.08.28/nestjs-logo-social.png)
+![NestJS](/assets/images/posts/22/08/22.08.28/nestjs-logo-social.png)
 
 # NestJS는 무엇인가요?
 

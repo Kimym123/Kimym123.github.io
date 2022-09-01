@@ -14,7 +14,7 @@ tags:
 last_modified_at: 2022-08-26
 ---
 
-![react](/assets/images/posts/22.08.26/react.jpg)
+![react](/assets/images/posts/22/08/22.08.26/react.jpg)
 
 **많은 기업에서 요구하는 스펙이기 때문입니다.**
 
