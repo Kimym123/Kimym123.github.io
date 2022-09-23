@@ -1,10 +1,11 @@
-function printAllPairs(n) {
-  for (var i = 0; i < n; i++) {
-    for (var j = 0; j < n; j++) {
-      console.log(i, j)
-    }
+function countDown(num) {
+  if (num <= 0) { // 종료 조건을 만드는 것
+    console.log("End!");
+    return;
   }
-  return 'end'
+  console.log(num);
+  num--; // 다른 입력값으로 변환해주는 것
+  countDown(num); // 재귀함수 호출
 }
 
-console.log(printAllPairs(500))
+console.log(countDown(5))
