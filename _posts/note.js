@@ -1,11 +1,21 @@
-function countDown(num) {
-  if (num <= 0) { // 종료 조건을 만드는 것
-    console.log("End!");
-    return;
+function selectionSort(arr) {
+  const swap = (arr, idx1, idx2) => {
+    [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]
   }
-  console.log(num);
-  num--; // 다른 입력값으로 변환해주는 것
-  countDown(num); // 재귀함수 호출
+
+  for (let i = 0; i < arr.length; i++) {
+    let min = i;
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[min]) {
+        min = j;
+      }
+    }
+    // 현재 요소가 최소값이면 교환을 해줄 필요가 없기 때문에 작성한 조건문.
+    if (i !== min) {
+      swap(arr, i, min)
+    }
+  }
+  return arr
 }
 
-console.log(countDown(5))
+console.log(selectionSort([9,1,2,3,4,5,6,7]))
