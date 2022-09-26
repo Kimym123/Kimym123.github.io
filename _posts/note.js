@@ -1,21 +1,29 @@
-function selectionSort(arr) {
+function pivot(arr, start = 0, end = arr.length + 1) {
   const swap = (arr, idx1, idx2) => {
-    [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]
+    [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
   }
 
-  for (let i = 0; i < arr.length; i++) {
-    let min = i;
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[min]) {
-        min = j;
-      }
-    }
-    // 현재 요소가 최소값이면 교환을 해줄 필요가 없기 때문에 작성한 조건문.
-    if (i !== min) {
-      swap(arr, i, min)
+  let pivot = arr[start];
+  let swapIdx = start;
+
+  for (let i = start + 1; i < arr.length; i++) {
+    if (pivot > arr[i]) {
+      swapIdx++
+      swap(arr, swapIdx, i)
     }
   }
-  return arr
+  swap(arr, start, swapIdx)
+  return swapIdx
 }
 
-console.log(selectionSort([9,1,2,3,4,5,6,7]))
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  if (left < right) {
+    let pivotIdx = pivot(arr, left, right );
+    quickSort(arr, left, pivotIdx - 1);
+    quickSort(arr, pivotIdx + 1, right)
+  }
+  return arr;
+}
+
+// console.log(merge([1,10,50], [2,14,99,100]))
+console.log(quickSort([10, 24, 76,73,72,1,9]))
